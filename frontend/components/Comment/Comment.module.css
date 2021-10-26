@@ -1,0 +1,76 @@
+.newComment {
+	display: flex;
+	column-gap: 15px;
+}
+
+.commentMain {
+	width: 100%;
+}
+
+.inputNewComment {
+}
+
+.newCommentButtons {
+	margin-top: 10px;
+	text-align: right;
+}
+
+.commentList {
+	padding: 0;
+}
+
+.commentWrapper {
+	list-style: none;
+	display: flex;
+	column-gap: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px rgb(214, 214, 214);
+}
+
+.commentAvatar {
+}
+
+.commentMain {
+}
+
+.commenter {
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.ago {
+	color: #aaa;
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+
+.ago:hover {
+	color: #000;
+}
+
+.commentText {
+}
+
+.pointWrapper {
+	align-self: flex-start;
+	flex-basis: 102px;
+}
+
+.halfStar {
+}
+
+/* .star:hover {
+	color: #ffd602;
+} */
+
+/* .star::after {
+	z-index: 5;
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	color: #ffd602;
+	height: 100%;
+	width: 50%;
+} */
