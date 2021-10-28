@@ -7,7 +7,9 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node backend/server",
+		"start-server": "node backend/server",
+		"start-client": "next start -p $PORT",
+		"start": "concurrently \"npm run start-server\" \"npm run start-client\"",
 		"server": "nodemon backend/server",
 		"client": "npm run dev --prefix frontend",
 		"dev": "concurrently \"npm run server\" \"npm run client\"",
