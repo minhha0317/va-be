@@ -1,8 +1,8 @@
 import React from 'react';
 import MainLayout from '../../components/layouts/MainLayout';
 
-const AdminUsers = () => {
-	return <MainLayout>AdminUsers</MainLayout>;
+const UserPage = () => {
+	return <MainLayout>UserPage</MainLayout>;
 };
 
-export default AdminUsers;
+export default UserPage;
