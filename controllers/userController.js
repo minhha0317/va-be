@@ -44,3 +44,7 @@ export const getUserProfile = asycnHandler(async (req, res) => {
 	}
 	res.send('Success');
 });
+
+export const getTest = (req, res) => {
+	res.send('OK');
+}
