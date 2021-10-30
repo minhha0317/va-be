@@ -1,6 +1,5 @@
 {
 	"name": "hcl-videoannotator",
-	"proxy": "http://127.0.0.1:5000",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
@@ -22,6 +21,9 @@
 		"express-async-handler": "^1.2.0",
 		"jsonwebtoken": "^8.5.1",
 		"mongoose": "^6.0.12"
+	},
+	"engines": {
+		"node": "16.x"
 	},
 	"devDependencies": {
 		"concurrently": "^6.3.0",
