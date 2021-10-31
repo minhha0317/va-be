@@ -8,7 +8,7 @@ export const videos = [
 		status: true,
 		thumbnail: '',
 		url: 'https://www.youtube.com/embed/SGJMCBMM7Ec',
-		subCategoryId: 'bike',
+		subCategorySlug: 'bike',
 	},
 	{
 		description:
@@ -19,7 +19,7 @@ export const videos = [
 		status: true,
 		thumbnail: '',
 		url: 'https://www.youtube.com/embed/Uj4s08jpqXc',
-		subCategoryId: 'f1',
+		subCategorySlug: 'f1',
 	},
 	{
 		description: "Kyoto's Jam",
@@ -29,7 +29,7 @@ export const videos = [
 		status: true,
 		thumbnail: '',
 		url: 'https://www.youtube.com/embed/rrOtI00U6x4',
-		subCategoryId: 'guitar',
+		subCategorySlug: 'guitar',
 	},
 	{
 		description:
@@ -40,29 +40,32 @@ export const videos = [
 		status: true,
 		thumbnail: '',
 		url: 'https://www.youtube.com/embed/pTt04A_Gph4',
-		subCategoryId: 'guitar',
+		subCategorySlug: 'guitar',
 	},
 ];
 
 export const categories = [
-	{ name: 'Race', description: 'Videos related to Racing' },
-	{ name: 'Music', description: 'Music video' },
+	{ slug: 'race', name: 'Race', description: 'Videos related to Racing' },
+	{ slug: 'music', name: 'Music', description: 'Music video' },
 ];
 
 export const subCategory = [
 	{
 		name: 'F1',
 		description: 'Racing F1',
-		categoryId: 'race',
+		categorySlug: 'race',
+		slug: 'f1',
 	},
 	{
 		name: 'bike',
 		description: 'Racing bikes',
-		categoryId: 'race',
+		categorySlug: 'race',
+		slug: 'bike',
 	},
 	{
 		name: 'Guitar',
 		description: 'Category of music related to guitars',
-		categoryId: 'music',
+		categorySlug: 'music',
+		slug: 'guitar',
 	},
 ];

@@ -27,10 +27,9 @@ const videoSchema = mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		subCategoryId: {
-			type: mongoose.Schema.Types.ObjectId,
+		subCategorySlug: {
+			type: String,
 			required: true,
-			ref: 'SubCategory',
 		},
 	},
 	{ timestamps: true },

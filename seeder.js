@@ -2,9 +2,10 @@ import mongoose from 'mongoose';
 import dotevn from 'dotenv';
 import colors from 'colors';
 import { users } from './data/users.js';
-import { categories } from './data/videos.js';
+import { categories, subCategory, videos } from './data/videos.js';
 import User from './models/userModel.js';
-import { Category } from './models/categoryModel.js';
+import { Category, SubCategory } from './models/categoryModel.js';
+import Video from './models/videoModel.js';
 import connectDb from './config/db.js';
 
 dotevn.config();
@@ -14,9 +15,13 @@ const importData = async () => {
 	try {
 		await User.deleteMany();
 		await Category.deleteMany();
+		await SubCategory.deleteMany();
+		await Video.deleteMany();
 
-		const createdUsers = await User.insertMany(users);
-		const adminUser = createdUsers[0]._id;
+		await User.insertMany(users);
+		await Category.insertMany(categories);
+		await SubCategory.insertMany(subCategory);
+		await Video.insertMany(videos);
 
 		console.log('Data Imported!'.green.inverse);
 		process.exit();
